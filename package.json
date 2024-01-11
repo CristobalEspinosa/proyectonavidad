@@ -17,10 +17,9 @@
     "posthtml-include": "^1.7.4"
   },
   "dependencies": {
-    "@vivaprivacy/cookie-consent": "^1.0.4",
-    "analog-clock": "^1.0.0",
+    "cookieconsent": "^3.1.1",
     "flatpickr": "^4.6.13",
-    "simple-slider": "^1.0.1",
-    "vanilla-cookieconsent": "^2.9.2"
+    "lightgallery": "^2.7.2",
+    "simple-slider": "^1.0.1"
   }
 }

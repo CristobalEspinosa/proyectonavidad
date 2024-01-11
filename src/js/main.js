@@ -4,24 +4,32 @@ import { getSlider } from 'simple-slider';
 getSlider();
 
 // cookies
-import cookieConsent from 'vanilla-cookieconsent';
-
-cookieConsent({
-  message: 'Este sitio web utiliza cookies para mejorar la experiencia del usuario.',
-  dismiss: 'Aceptar',
-  link: 'Leer más',
-  href: 'https://www.example.com/cookies',
-  container: document.body,
-  theme: 'light',
-  domain: 'example.com',
-  secure: true,
-  sameSite: 'strict'
+window.addEventListener("load", function(){
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#000"
+      },
+      "button": {
+        "background": "#f1d600"
+      }
+    },
+    "content": {
+      "message": "Este sitio web utiliza cookies para garantizar que obtenga la mejor experiencia en nuestro sitio web.",
+      "dismiss": "Aceptar",
+      "link": "Leer más",
+      "href": "/cookies"
+    }
+  })
 });
 
-// fecha
+// fecha en identificarse.html
 import flatpickr from "flatpickr";
 
 const datepicker = flatpickr("#myDatepicker", {
   enableTime: true,
   dateFormat: "Y-m-d H:i",
 });
+
+// galeria
+lightGallery(document.getElementById('lightgallery'));
