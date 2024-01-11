@@ -92,10 +92,10 @@ footer {
   margin: 25px;
 }
 
-/* menu de slider */
+/* imagenes abajo de slider */
 #principal{
   
-  width: 850px;
+  width: 900px;
   height:150 ;
   position: relative;
 
@@ -113,9 +113,22 @@ footer {
   width: 150px;
   height: 100px;
 }
+.icono{
+  width: 5px;
+  height: 5px;
+  margin: 10px;
+  margin-top:50px;
+  position: relative;
+  float: left;
+}
 
-/*  color letras */
+/* imagenes del slider */
+.imggaleria{
+  width:612px;
+  height:430px;
+}
 
+/* color letra */
 .pgaleria{
   color: rgb(230, 227, 177);
 }
